@@ -1,0 +1,151 @@
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  background-image: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
+  padding: 100px 10vw;
+}
+
+.hero-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  line-height: 1.1;
+  gap: 15px;
+}
+
+.hero-left h2 {
+  color: #090909;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.hero-left p {
+  color: #171717;
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+.hero-hand-icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero-hand-icon img {
+  width: 80px;
+}
+
+.hero-latest-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff4141;
+  color: #fff;
+  width: 100%;
+  max-width: 300px;
+  height: 60px;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 30px;
+  gap: 15px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero-right img {
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Responsive adjustments for 1280px */
+@media (max-width: 1280px) {
+  .hero {
+    padding: 90px 8vw;
+  }
+
+  .hero-left p {
+    font-size: 4.5rem;
+  }
+
+  .hero-hand-icon img {
+    width: 75px;
+  }
+
+  .hero-latest-button {
+    max-width: 280px;
+    height: 55px;
+    font-size: 1.1rem;
+  }
+}
+
+/* Responsive adjustments for 1024px */
+@media (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+    height: auto;
+    padding: 80px 5vw;
+  }
+
+  .hero-left {
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-left p {
+    font-size: 4rem;
+  }
+
+  .hero-latest-button {
+    width: 80%;
+  }
+}
+
+/* Responsive adjustments for 768px */
+@media (max-width: 768px) {
+  .hero-left p {
+    font-size: 3rem;
+  }
+
+  .hero-hand-icon img {
+    width: 60px;
+  }
+
+  .hero-latest-button {
+    width: 70%;
+    height: 50px;
+    font-size: 1rem;
+  }
+}
+
+/* Responsive adjustments for 480px */
+@media (max-width: 480px) {
+  .hero {
+    padding: 50px 20px;
+  }
+
+  .hero-left p {
+    font-size: 2.5rem;
+  }
+
+  .hero-latest-button {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .hero-right img {
+    max-width: 300px;
+  }
+}

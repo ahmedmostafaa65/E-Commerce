@@ -1,0 +1,110 @@
+.productDisplay {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 120px;
+  gap: 70px;
+  margin-bottom: 60px;
+}
+.productDisplay-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.productDisplay-img-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.productDisplay-img-list img {
+  height: 142px;
+}
+.product-main-img {
+  height: 600px;
+}
+.productDisplay-right{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+}
+.productDisplay-right h1{
+    text-align: start;
+}
+.productDisplay-right-star{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4px;
+}
+.productDisplay-right-prices{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+}
+.productDisplay-right-old-price{
+    font-size: 18px;
+    font-weight: 600;
+    color: grey;
+    text-decoration: line-through;
+}
+.productDisplay-right-new-price{
+    font-size: 18px;
+    font-weight: 600;
+    color: #c80808dd;
+}
+.productDisplay-right-description{
+    text-align: start;
+    color: #383232;
+    font-weight: 500;
+}
+.productDisplay-right-size{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.productDisplay-right-size h3{
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(55, 47, 47);
+    text-transform: capitalize;
+}
+.productDisplay-right-select-size{
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    align-items: center;
+    margin-top: 15px;
+}
+.productDisplay-right-select-size p{
+    background-color: #dacbcb;
+    padding: 8px 18px;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.productDisplay-right button{
+    width: 150px;
+    height: 45px;
+    background-color: #b30101;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.productDisplay-category{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 15px;
+    gap: 7px;
+}
+.productDisplay-category span{
+    font-weight: 600;
+}
